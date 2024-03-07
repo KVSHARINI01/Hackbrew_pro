@@ -6,14 +6,17 @@
     background-color: #A7FFF6;
   }
   .nav-link:hover {
-    border-bottom: 2px solid #086375;
+    border: 2px solid #086375;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #086375;
   }
   #title{
   color: #086375;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 50px;
+  margin-left: 150px;
   font-style: normal;
   }
   #nav{
