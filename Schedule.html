@@ -1,44 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="Schedule.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add Bootstrap CSS link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #97c8db; /* Calming background color */
+    }
+    .dabba {
+      background-color: #e1f7d5; /* Even more lighter shade of green */
+      border: 4px solid #428b4b; /* Somewhat darker shade of green border */
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 200px;
+      width: 60%; /* Increased margin-top to move it further down */
+      margin-left: 280px; /* Added margin-left to move it to the right */
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px; /* Increased space between the sentence and input field */
+    }
+    #activityInput {
+      width: 50%; /* Reduced input field width */
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #8d99ae; /* Light purple button color */
+      color: #edf2f4; /* Calming text color */
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px; /* Increased space between button and outputs */
+    }
+    button:hover {
+      background-color: #2b2d42; /* Deep blue hover color */
+    }
+    .output-container {
+      width: 30%; /* Adjusted width to make them narrower */
+      border: 2px solid #a3b1c6; /* Reduced border thickness */
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px; /* Increased space between output containers */
+      text-align: center; /* Center align the output sentence */
+      margin: auto; /* Center the container */
+      background-color: #d3f2be; /* Light shade of green */
+    }
+    #output {
+      font-weight: bold;
+      font-family: "Poppins", sans-serif;;
+    }
+    #schedule-info,
+    #schedule-info-end {
+      margin-bottom: 20px;
+    }
+    .active {
+  font-weight: bold;
+  border: 1px solid #086375;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px #086375;
+  background-color: #69b1aa;
+}
+.nav-link:hover {
+  border: 2px solid #086375;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px #086375;
+}
+#title{
+color: #086375;
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 800;
+font-size: 50px;
+margin-left: 150px;
+font-style: normal;
+}
+#nav{
+  color: #A4F9C8;
+}
+#nav1, #nav2,#nav3,#nav4,#nav5{
+  color: #086375;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-bottom: 3px solid #086375;
+  border-radius: 30px;
+}
+#navbar{
+  color: #A4F9C8;
+}
+  </style>
+  <title>Schedule</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md shadow fixed-top bg-light" id="nav">
-        <div class="container-fluid" >
-          <div class="container">
-            <a href="./home.html" class="navbar-brand" id="title"><i class="fa-solid fa-child-dress"></i>Serenity</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="container navbar-collapse collapse" id="navbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mx-3">
-                <a href="./Resources.html" class="nav-link" id="nav1"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;&nbsp;Resources</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a href="./Schedule.html" class="nav-link active" id="nav2"><i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;Schedule</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a href="./Appointments.html" class="nav-link" id="nav3"><i class="fa-solid fa-calendar-check"></i>&nbsp;&nbsp;&nbsp;Appointments</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a href="./Games.html" class="nav-link" id="nav4"><i class="fa-solid fa-gamepad"></i>&nbsp;&nbsp;&nbsp;Games</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--navbar ends-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-md shadow fixed-top bg-light" id="nav">
+    <div class="container-fluid">
+      <div class="container">
+        <a href="./home.html" class="navbar-brand" id="title"><img src="./serenity_logo_new.png" alt="" width="80px"
+            height="80px">&nbsp;Autimate</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="container navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-1">
+            <a href="./Resources.html" class="nav-link" id="nav1"><i class="fa-solid fa-book"></i>&nbsp;Resources</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="./Schedule.html" class="nav-link active" id="nav2"><i
+                class="fa-regular fa-calendar-days"></i>&nbsp;Schedule</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="./Games.html" class="nav-link" id="nav3"><i class="fa-solid fa-gamepad"></i>&nbsp;Games</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="#" class="nav-link" id="nav4"><i class="fa-solid fa-users-line"></i>&nbsp;Community</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="#" class="nav-link" id="nav4"><i class="fa-solid fa-phone"></i>&nbsp;Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar ends-->
+  <div class="dabba">
+    <label for="activityInput" style="font-weight: bold; font-size: xx-large;">Enter your tasks (comma-separated):</label>
+    <div class="input-container">
+      <input type="text" id="activityInput" placeholder="">
+      <button class="btn btn-primary" onclick="generateActivities()">Generate Schedule</button>
+    </div>
+
+    <!-- Additional line before outputs -->
+    <div id="schedule-info"></div>
+
+    <div id="output"></div>
+
+    <!-- Additional line after outputs -->
+    <div id="schedule-info-end"></div>
+  </div>
+
+  <!-- Add Bootstrap JS and Popper.js scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function generateActivities() {
+      const inputField = document.getElementById('activityInput');
+      const outputDiv = document.getElementById('output');
+      const scheduleInfoDiv = document.getElementById('schedule-info');
+      const scheduleInfoEndDiv = document.getElementById('schedule-info-end');
+      const activities = inputField.value.split(',').map(activity => activity.trim());
+
+      if (activities.length === 0 || activities[0] === '') {
+        alert('Please enter at least one task.');
+        return;
+      }
+
+      // Additional line before outputs
+      scheduleInfoDiv.innerHTML = "<p>This is the Schedule for today:</p>";
+
+      let outputHTML = '';
+
+      for (let i = 0; i < activities.length; i++) {
+        const outputContainer = document.createElement('div');
+        outputContainer.className = 'output-container';
+        const fillInTheBlank = `${activities[i]} is your ${i + 1}${getOrdinalSuffix(i + 1)} task!`;
+        outputContainer.innerHTML = fillInTheBlank;
+        outputDiv.appendChild(outputContainer);
+      }
+
+      // Additional line after outputs
+      scheduleInfoEndDiv.innerHTML = "<br><p>Good luck finishing them! Have a great day!!</p>";
+    }
+
+    function getOrdinalSuffix(number) {
+      const suffixes = ["st", "nd", "rd", "th"];
+      const v = number % 100;
+      return (v >= 11 && v <= 13) ? 'th' : suffixes[(v - 1) % 10] || 'th';
+    }
+  </script>
 </body>
 </html>
