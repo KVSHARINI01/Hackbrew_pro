@@ -33,31 +33,28 @@ font-style: normal;
 #navbar{
   color: #A4F9C8;
 }
-#quote{
-  font-family: "Indie Flower", cursive;
-  font-weight: 500;
+#auti{
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #086375;
-  font-size: 100px;
-  margin-top: 100px;
+  font-size: 160px;
+  margin-top: 160px;
+  margin-left: 160px;
 }
 #tagline{
   color: #1da9c5;
 font-family: "Dancing Script", cursive;
 font-optical-sizing: auto;
-font-weight: 500;
-font-size: 40px;
+font-weight: 700;
+font-size: 60px;
 font-style: normal;
+margin-left: 270px;
 }
-#sp1,#sp2{
-   background-color: #D5F0C1;
-   color: #086375;
-   font-family: "Indie Flower", cursive;
-font-weight: 400;
-font-style: normal;
-background-size: contain;
+#autimg{
+  margin-left: 100px;
+  margin-top: 70px;
 }
-
 #cont2{
   background-color: #AAD9BB;
 }
@@ -65,49 +62,43 @@ background-size: contain;
   margin: 100px;
 }
 #who{
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
+  text-shadow: 5px 5px #65b4c4;
 color: #086375;
-font-size: 60px;
-margin-top: 10px;
+font-size: 98px;
+text-align: center;
 }
 #choose{
- color: #6D88D9;
- font-family: "Roboto", sans-serif;
+ color: #178aa0 ;
+ font-family: "Poppins", sans-serif;
 font-weight: 700;
+font-size: 52px;
 font-style: normal;
+text-align: center;
 }
 .channel-container {
   display: flex;
+  gap: 0px;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 40px;
+  margin-top: 130px;
 }
 .channel {
-  width: 25%; /* Adjusted width to make them narrower */
+  width: 20%; /* Adjusted width to make them narrower */
   height: 170px; /* Increased height slightly */
-  border-radius: 30px;
-  overflow: hidden;
-  background: #1d976c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #93f9b9,
-    #1d976c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #93f9b9,
-    #1d976c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* Light purple channel background color */
+  background: #B3FFAB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-bottom: 10px; /* Added margin-bottom for spacing */
   cursor: pointer;
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  gap: 0px;
 }
 .channel:hover {
   background-color: #2b2d42; /* Deep blue hover color */
@@ -126,4 +117,32 @@ font-style: normal;
   font-style: normal;
   font-size: 40px;
   color: #086375;
+}
+.cont3{
+  background-color: #6D88D9;
+}
+#who_cont{
+  margin-top: 50px;
+}
+
+#new_banner{
+  background-color: #AAD9BB;
+}
+#dashboard{
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+color: #086375;
+font-size: 95px;
+text-align: center;
+}
+.card-header{
+  background-color: #cce4d6;
+}
+.clickbtn{
+  border: 4px solid #A4F9C8;
+}
+.click{
+  text-decoration: none;
+  color: black;
 }
