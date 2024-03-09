@@ -5,36 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Child</title>
 </head>
+<style>
+    nav,footer{
+        background-color: rgb(119, 255, 0);
+        padding: 20px;
+    }
+    header{
+        background-color: blue;
+        padding: 30px;
+    }
+    main{
+        background-color: aqua;
+    }
+    section{
+        align-content: center;
+        padding:20px;
+        border:10px;
+        border-radius:5px;
+        color: red;
+        text-align:center;
+    }
+    section img{
+        border-radius: 10%;
+        padding: 20px;
+    }
+</style>
 <body>
     <header>
         <h1>Learn with Fun</h1>
     </header>
     <nav>
-        <a href="http://">Home</a>
-        <a href="http://">Story Time</a>
-        <a href="http://">Games</a>
-        <a href="http://">Paper Craft</a>
+        <a href="http://">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://">Story Time</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://">Games</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://">Paper Craft</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="http://">Live Interaction</a>
     </nav>
     <main>
         <section>
             <h2>Story Time</h2>
-            <a href="ABoyCalledBat.pdf" target="_blank">ABoyCalledBat</a>
+            <a href="story/Cinderella.pdf" target="_blank">
+                <img src="story/cind.png" alt="Cinderella" width="300px" height="400">
+            </a>
+            <a href="story/BeautyBeast.pdf" target="_blank">
+                <img src="story/BeautyBeast.png" alt="BeautyBeast" width="300px" height="400">
+            </a>
+            <a href="story/The Wonky Donkey By Craig Smith.pdf" target="_blank">
+                <img src="story/wonkey.png" alt="The Wonky Donkey By Craig Smith" width="300px" height="400">
+            </a><br><br><br>
+            <a href="story/Pinocchio.pdf" target="_blank">
+                <img src="story/Pinocchio.png" alt="Pinocchio" width="300px" height="400">
+            </a>
+            <a href="story/ABoyCalledBat.pdf" target="_blank">
+                <img src="story/boy.png" alt="ABoyCalledBat" width="300px" height="400">
+            </a>
+            <a href="story/Ugly-duckling.pdf" target="_blank">
+                <img src="story/ugly.png" alt="Ugly-duckling" width="300px" height="400">
+            </a>
         </section>
         <br><br>
-        <section>
+        <section class="games">
             <h2>Games</h2>
-            <a href="https://learningworksforkids.com/apps/see-touch-learn/" target="_blank"><img src="games/g1.png" alt="SeeTouchLearn"></a>
-            <a href="https://www.memozor.com/memory-games/by-theme" target="_blank"><img src="games/Memory.png" alt="Memory Game"></a>
-            <a href="https://www.abcya.com/games/alphabet_bubble_letter_match" target="_blank"><img src="games/alpha_bubble.png" alt="Alphabet Bubble"></a>
-            <a href="https://www.happytracing.com/detail/Fantastic_writing_numbers_game.html" target="_blank"><img src="games/Rainbow.png" alt="Rainbow Bus Game"></a>
-            <a href="https://toytheater.com/maze/" target="_blank"><img src="games/maze.png" alt="Maze Game"></a>
-            <a href="https://poki.com/en/g/water-color-sort" target="_blank"><img src="games/bubble_sort.png" alt="liquid Sorting Game"></a>
-            <a href="https://toytheater.com/hidden-picture-playground/" target="_blank"><img src="games/Search.png" alt="Search Game"></a>
-            <a href="https://toytheater.com/snakes-and-ladders/" target="_blank"><img src="games/Snake.png" alt="Snake and Ladder"></a>
-            <a href="https://www.roomrecess.com/pages/ColoringPagesForKids.html" target="_blank"><img src="games/Colouring.png" alt="Colouring Game"></a>
+            <a href="https://learningworksforkids.com/apps/see-touch-learn/" target="_blank">
+                <img src="games/g1.png" alt="SeeTouchLearn"></a>
+            <a href="https://www.memozor.com/memory-games/by-theme" target="_blank">
+                <img src="games/Memory.png" alt="Memory Game" width="295px" height="286px"></a>
+            <a href="https://www.abcya.com/games/alphabet_bubble_letter_match" target="_blank">
+                <img src="games/alpha_bubble.png" alt="Alphabet Bubble" width="295px" height="286px"></a>
+                <br><br>
+            <a href="https://www.happytracing.com/detail/Fantastic_writing_numbers_game.html" target="_blank">
+                <img src="games/Rainbow.png" alt="Rainbow Bus Game" width="295px" height="286px"></a>
+            <a href="https://toytheater.com/maze/" target="_blank"><img src="games/maze.png" alt="Maze Game" width="295px" height="286px"></a>
+            <a href="https://poki.com/en/g/water-color-sort" target="_blank">
+                <img src="games/bubble_sort.png" alt="liquid Sorting Game" width="295px" height="286px"></a>
+                <br><br>
+            <a href="https://toytheater.com/hidden-picture-playground/" target="_blank">
+                <img src="games/Search.png" alt="Search Game" width="295px" height="286px"></a>
+            <a href="https://toytheater.com/snakes-and-ladders/" target="_blank">
+                <img src="games/Snake.png" alt="Snake and Ladder" width="295px" height="286px"></a>
+            <a href="https://www.roomrecess.com/pages/ColoringPagesForKids.html" target="_blank">
+                <img src="games/Colouring.png" alt="Colouring Game" width="295px" height="286px"></a>
             <br><br><br>
-            SeeTouchLearn
+            ''SeeTouchLearn
             Matching Game
             Alphabet Bubble
             Rainbow Busses
@@ -42,7 +94,7 @@
             Soting Games
             Search Games
             Snake and Ladder
-            Colouring Game
+            Colouring Game''
         </section>
         <br><br>
     </main>
